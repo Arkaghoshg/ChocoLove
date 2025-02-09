@@ -1,0 +1,195 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.body {
+    background-image: url('bg-image.jpg');
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    min-height: 100vh; /* Ensures the .body element takes up at least the full viewport height */
+    width: 100vw; /* Ensures the .body element takes up the full viewport width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    padding-bottom: 100px; /* Add space at the bottom */
+}
+
+.pages {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    font-weight: 900;
+    font-size: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+
+.contact a, .home a {
+    padding-right: 40px;
+}
+
+.contact a:hover, .home a:hover {
+    text-decoration: pink underline;
+    color: white;
+    opacity: 1;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 4px;
+}
+
+p {
+    text-align: center;
+    line-height: 0.2;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 150px;
+}
+
+.footer {
+    padding-bottom: 100px;
+}
+
+.social {
+    display: flex;
+    justify-content: right;
+    gap: 20px; /* Ensures spacing between icons */
+}
+
+.social a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 10px; /* Default icon size */
+    color: inherit; /* Keeps original color */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.facebook i {
+    font-size: 20px; /* Facebook icon size */
+    color: #1877F2;
+}
+
+.instagram i {
+    font-size: 20px; /* Instagram icon size */
+    color: #E4405F;
+}
+
+.snapchat i {
+    font-size: 20px; /* Snapchat icon size */
+    color: #FFFC00;
+}
+
+.social a:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+.copyright{
+    padding-left: 20px;
+}
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 600px;
+    background-color: bisque;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactform h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#ask {
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    background-color: pink;
+    border: double;
+    border-color: white;
+    border-width: 5px;
+    
+}
+
+button{
+    justify-content: right;
+    align-self: flex-end; /* Align the button to the right */
+    cursor: pointer;
+}
+
+/* Android Specific Styles */
+/* Android Specific Styles */
+@media (max-width: 768px) {
+    .body{
+        padding-bottom: 10px;
+    }
+    .pages {
+        flex-direction: column;
+        align-items: center;
+        font-size: 120%;
+    }
+
+    .contact a, .home a {
+        padding-right: 0;
+        margin-bottom: 10px;
+        
+    }
+
+    .logo{
+        padding-bottom: 10px;
+    }
+
+    .contactform{
+        width: 80%;
+        
+    }
+
+    .form-row{
+        flex-direction: column;
+    }
+    
+    .form-row input,
+.form-row textarea{
+    width: 50%;
+}
+
+}
